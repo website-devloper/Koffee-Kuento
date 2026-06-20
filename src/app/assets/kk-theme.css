@@ -1,0 +1,864 @@
+/* ================================================================
+   KOFFEE KUENTO — Brand Theme Override
+   Imported after main.css. Re-skins the FreshEat template.
+   ================================================================ */
+
+/* ── 1. FONTS & VARIABLES ───────────────────────────────────────── */
+:root {
+  --theme:    #6F4E37;
+  --theme2:   #C08A4E;
+  --title:    #2B211A;
+  --bg:       #2B211A;
+  --bg2:      #F6F1EB;
+  --bg3:      #E7DDCF;
+  --leaf:     #4F6F52;
+  --text:     #5C6574;
+  --text2:    #888;
+  --border-2: #D2D2D1;
+  --radius:   6px;
+  --shadow:   0 4px 24px rgba(43,33,26,0.10);
+  --transition: 0.26s cubic-bezier(0.16,1,0.3,1);
+}
+
+body {
+  font-family: var(--body-font), 'Inter', 'Helvetica Neue', sans-serif;
+  color: var(--text);
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font), 'Montserrat', 'Inter', sans-serif;
+  font-weight: 800;
+  color: var(--title);
+  letter-spacing: -0.02em;
+}
+
+/* ── 2. PAGE BACKGROUND ─────────────────────────────────────────── */
+.bg-color2 { background-color: var(--bg2) !important; }
+.bg-color3 { background-color: #1f1915 !important; }
+.bg-title  { background-color: var(--bg)  !important; }
+
+/* ── 3. BUTTONS ─────────────────────────────────────────────────── */
+.theme-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background-color: var(--theme) !important;
+  color: #fff !important;
+  border: 2px solid var(--theme) !important;
+  border-radius: var(--radius) !important;
+  padding: 12px 26px !important;
+  font-family: var(--body-font), 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.22s ease,
+              border-color     0.22s ease,
+              transform        0.18s ease,
+              box-shadow       0.22s ease !important;
+}
+.theme-btn::before,
+.theme-btn::after {
+  display: none !important;
+}
+/* Icon inside theme-btn: kill template's white-box treatment */
+.theme-btn i,
+.theme-btn svg {
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  margin-left: 0 !important;
+  font-size: inherit !important;
+}
+.theme-btn:hover {
+  background-color: var(--theme2) !important;
+  border-color:     var(--theme2) !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(192,138,78,0.30) !important;
+  text-decoration: none !important;
+}
+.theme-btn:hover i { color: #fff !important; }
+
+.theme-btn.style4, .theme-btn.style5 {
+  background-color: var(--theme) !important;
+  border-color: var(--theme) !important;
+}
+.theme-btn.style4:hover, .theme-btn.style5:hover {
+  background-color: var(--theme2) !important;
+  border-color: var(--theme2) !important;
+}
+
+/* Outline variant */
+.kk-outline-btn,
+.theme-btn.style6 {
+  background-color: transparent !important;
+  border: 2px solid #fff !important;
+  color: #fff !important;
+}
+.kk-outline-btn:hover,
+.theme-btn.style6:hover {
+  background-color: rgba(255,255,255,0.15) !important;
+  transform: translateY(-2px);
+}
+
+/* ── 4. GLOVO BUTTON ─────────────────────────────────────────────── */
+.glovo-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background-color: #00A082 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: var(--radius) !important;
+  padding: 12px 24px !important;
+  font-family: var(--body-font), 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: background-color 0.22s ease, transform 0.18s ease, box-shadow 0.22s ease !important;
+}
+/* Kill template's icon box inside glovo-btn */
+.glovo-btn i,
+.glovo-btn svg {
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  margin-left: 0 !important;
+}
+.glovo-btn:hover {
+  background-color: #008f72 !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,160,130,0.30) !important;
+  text-decoration: none !important;
+}
+
+/* ── 5. HERO BANNER ──────────────────────────────────────────────── */
+.kk-hero { position: relative; }
+
+.kk-hero__slide {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) { .kk-hero__slide { min-height: 480px; } }
+
+.kk-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(43,33,26,0.88) 0%,
+    rgba(43,33,26,0.60) 55%,
+    rgba(43,33,26,0.25) 100%
+  );
+  z-index: 1;
+}
+
+.kk-hero__slide .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.kk-hero__content { max-width: 620px; }
+
+.kk-hero__label {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  color: var(--theme2);
+  font-family: var(--body-font), 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.kk-hero__title {
+  font-family: var(--title-font), 'Montserrat', 'Inter', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 32px;
+  text-transform: none !important;
+}
+
+.kk-hero__btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.kk-hero__btn-primary {
+  background-color: var(--theme2) !important;
+  border-color: var(--theme2) !important;
+}
+.kk-hero__btn-primary:hover {
+  background-color: #a8752e !important;
+  border-color: #a8752e !important;
+}
+
+.kk-hero__btn-outline {
+  background-color: transparent !important;
+  border-color: rgba(255,255,255,0.7) !important;
+  color: #fff !important;
+}
+.kk-hero__btn-outline:hover {
+  background-color: rgba(255,255,255,0.12) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Slick dots styling for hero */
+.kk-hero .slick-dots {
+  bottom: 24px;
+}
+.kk-hero .slick-dots li button:before {
+  color: rgba(255,255,255,0.5);
+  font-size: 10px;
+}
+.kk-hero .slick-dots li.slick-active button:before {
+  color: var(--theme2);
+  opacity: 1;
+}
+
+/* ── 6. OFFER CARDS ──────────────────────────────────────────────── */
+.kk-offer {
+  padding: 80px 0;
+  background-color: var(--bg2);
+}
+
+.kk-offer__card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 340px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.30s ease, box-shadow 0.30s ease;
+}
+.kk-offer__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(43,33,26,0.22);
+}
+
+.kk-offer__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(43,33,26,0.92) 0%,
+    rgba(43,33,26,0.40) 55%,
+    rgba(43,33,26,0.05) 100%
+  );
+  z-index: 1;
+}
+
+.kk-offer__body {
+  position: relative;
+  z-index: 2;
+  padding: 28px 28px 32px;
+}
+
+.kk-offer__tag {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  color: var(--theme2);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.kk-offer__title {
+  font-family: var(--title-font), 'Montserrat', 'Inter', sans-serif;
+  color: #fff;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.kk-offer__desc {
+  color: rgba(255,255,255,0.78);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.kk-offer__btn {
+  display: inline-flex;
+  align-items: center;
+  background: var(--theme2);
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  border-radius: 5px;
+  text-decoration: none !important;
+  transition: background-color 0.22s ease, transform 0.18s ease;
+}
+.kk-offer__btn:hover {
+  background: #a8752e !important;
+  color: #fff !important;
+  transform: translateX(3px);
+  text-decoration: none;
+}
+
+/* ── 7. SPLIT CTA (About-style) ──────────────────────────────────── */
+.kk-split { background-color: var(--bg2); }
+
+.kk-split__wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.kk-split__photo {
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.kk-split__content {
+  background: #fff;
+  padding: 56px 48px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 991px) { .kk-split__content { padding: 40px 32px; } }
+
+.kk-split__eyebrow {
+  display: inline-block;
+  color: var(--theme);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.kk-split__heading {
+  font-family: var(--title-font), 'Montserrat', 'Inter', sans-serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--title);
+  line-height: 1.22;
+  margin-bottom: 18px;
+}
+
+.kk-split__body {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.kk-split__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ── 8. DELIVERY CTA SECTION ─────────────────────────────────────── */
+.kk-delivery {
+  position: relative;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.kk-delivery__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(43,33,26,0.82);
+  z-index: 1;
+}
+
+.kk-delivery .container {
+  position: relative;
+  z-index: 2;
+}
+
+.kk-delivery__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: var(--theme2);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.kk-delivery__heading {
+  font-family: var(--title-font), 'Montserrat', 'Inter', sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.18;
+  margin-bottom: 18px;
+}
+
+.kk-delivery__body {
+  color: rgba(255,255,255,0.78);
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 520px;
+  margin: 0 auto 36px;
+}
+
+.kk-delivery__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.kk-delivery__glovo {
+  font-size: 14px !important;
+  padding: 14px 30px !important;
+}
+
+.kk-delivery__reserve {
+  background-color: transparent !important;
+  border-color: rgba(255,255,255,0.6) !important;
+}
+.kk-delivery__reserve:hover {
+  background-color: rgba(255,255,255,0.12) !important;
+  border-color: #fff !important;
+}
+
+/* ── 9. SIGNATURE DISHES (BestSelling) ──────────────────────────── */
+.dishes-card.style2 {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.dishes-card.style2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(111,78,55,0.20);
+}
+.dishes-card.style2 .dishes-thumb img {
+  transition: transform 0.4s ease;
+}
+.dishes-card.style2:hover .dishes-thumb img {
+  transform: scale(1.05);
+}
+
+/* ── 10. MENU PAGE CARDS ─────────────────────────────────────────── */
+.food-menu-section .d-flex.flex-wrap.gap-2 button {
+  transition: all 0.22s ease;
+  font-family: var(--body-font), 'Inter', sans-serif;
+}
+
+/* ── 11. FEATURE CATEGORY SLIDER ────────────────────────────────── */
+.dishes-card.style3 .dishes-thumb {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dishes-card.style3 .dishes-thumb img {
+  transition: transform 0.4s ease;
+  object-fit: cover;
+  width: 100%;
+}
+.dishes-card.style3:hover .dishes-thumb img { transform: scale(1.07); }
+
+/* ── 12. TESTIMONIALS ───────────────────────────────────────────── */
+.testimonial-card.style2 {
+  background: #fff;
+  border-radius: 10px;
+  padding: 36px;
+  box-shadow: 0 4px 28px rgba(111,78,55,0.09);
+  border-left: 4px solid var(--theme2);
+}
+.testimonial-section.bg-white {
+  background-color: var(--bg2) !important;
+}
+.kk-testimonial-photo {
+  height: 100%;
+  min-height: 380px;
+}
+
+/* ── 13. ABOUT SECTION ──────────────────────────────────────────── */
+.about-wrapper.style2 .about-us .about-thumb {
+  margin-left: 0 !important;
+  position: static !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.about-wrapper.style2 .about-thumb,
+.about-wrapper.style2 .about-thumb > * {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.kk-about-photo {
+  width: 100%;
+  height: 420px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(43,33,26,0.18);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Fix btn-wrapper max-width that forces text to wrap */
+.btn-wrapper {
+  max-width: none !important;
+  display: flex;
+  justify-content: center;
+}
+.btn-wrapper .theme-btn {
+  white-space: nowrap;
+}
+
+/* ── 14. HEADER ─────────────────────────────────────────────────── */
+/* Shadow when sticky header reappears on scroll up */
+.cs-gescout_show.cs-gescout_sticky {
+  box-shadow: 0 2px 20px rgba(43, 33, 26, 0.12) !important;
+}
+/* Taller nav bar for the larger logo */
+.cs_site_header.cs_style_1 .cs_main_header_in,
+.cs_site_header.header_style_2.cs_style_1 .cs_main_header_in {
+  height: 128px !important;
+  overflow: visible !important;
+}
+/* Spacing div: must equal top-bar (~36px) + main header (128px) */
+@media (min-width: 1200px) {
+  .cs_site_header_spacing_130 { height: 166px !important; }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .cs_site_header_spacing_130 { height: 128px !important; }
+}
+@media (max-width: 767px) {
+  .cs_site_header_spacing_130 { height: 116px !important; }
+}
+.cs_top_header,
+.cs_site_header.cs_style_1 .cs_top_header {
+  background-color: #1a120e !important;
+  padding: 8px 0;
+  font-size: 12px;
+}
+.cs_site_header.cs_style_1 .cs_top_header .container::before {
+  background-color: #1a120e !important;
+}
+/* Force top header inner content visible — main.css hides it by default */
+.cs_site_header.cs_style_1 .cs_top_header_in {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+.cs_top_nav li + li::before {
+  content: "·";
+  margin: 0 10px;
+  opacity: 0.5;
+}
+/* ── LIGHT HEADER ── */
+.cs_main_header,
+.cs_site_header .cs_main_header,
+.cs_site_header.cs_style_1 .cs_main_header,
+.cs_sticky_header.cs-gescout_sticky .cs_main_header {
+  background-color: #FAF7F2 !important;
+  border-bottom: 1px solid #E8E0D8;
+}
+/* Keep cream on scroll — override template's dark sticky bg */
+.cs-gescout_sticky .cs_main_header,
+.header_sticky_style1.cs-gescout_sticky .cs_main_header,
+.kk-scrolled .cs_main_header { background-color: #FAF7F2 !important; }
+.header_sticky_style1.cs-gescout_sticky .cs_nav_list > li > a { color: #2B211A !important; }
+/* Logo — left margin so it doesn't hug the edge */
+.cs_site_branding { margin-left: 16px !important; }
+/* Center nav links vertically */
+.cs_site_header.cs_style_1 .cs_main_header_center {
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Nav links — color + active state, no hover underline */
+.cs_nav_list > li > a {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #2B211A !important;
+  transition: color 0.25s ease;
+}
+.cs_nav_list > li > a:hover,
+.cs_nav_list > li.active > a {
+  color: var(--theme) !important;
+}
+/* Mobile hamburger lines — dark on light bg */
+.cs-munu_toggle span,
+.cs-munu_toggle span::before,
+.cs-munu_toggle span::after { background-color: #2B211A !important; }
+/* Mobile nav dropdown */
+.cs_nav_list { background-color: #FAF7F2 !important; }
+/* ── DARK FOOTER ── */
+.footer-section,
+.footer-section.bg-title { background-color: #2B211A !important; }
+.footer-top { background: #1a120e !important; }
+.footer-top .fancy-box .item1 i {
+  background: #C08A4E !important;
+  color: #fff !important;
+}
+.footer-top .fancy-box .item2 h6 { color: #C08A4E !important; }
+.footer-top .fancy-box .item2 p,
+.footer-top .fancy-box .item2 p a { color: rgba(255,255,255,0.85) !important; }
+.single-footer-widget .widget-head h3 { color: #FAF7F2 !important; }
+.single-footer-widget .widget-head h3::before,
+.single-footer-widget .widget-head h3::after { background: #C08A4E !important; }
+.footer-content p { color: rgba(255,255,255,0.7) !important; }
+.list-area li,
+.list-area li a { color: rgba(255,255,255,0.75) !important; }
+.list-area li a:hover { color: #C08A4E !important; }
+.list-area li i { color: #C08A4E !important; }
+.text-theme-color2 { color: #C08A4E !important; }
+.social-icon a { color: rgba(255,255,255,0.75) !important; }
+.social-icon a:hover { color: #C08A4E !important; }
+.footer-bottom {
+  background-color: #1a120e !important;
+  border-top: 1px solid rgba(255,255,255,0.08) !important;
+}
+.footer-bottom .footer-wrapper {
+  padding: 20px 0 !important;
+}
+.footer-bottom p,
+.footer-bottom p a { color: rgba(255,255,255,0.6) !important; }
+.footer-bottom p a:hover { color: #C08A4E !important; }
+/* Contact link */
+.footer-bottom .brand-logo li {
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.footer-bottom .brand-logo a {
+  color: rgba(255,255,255,0.6) !important;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.footer-bottom .brand-logo a:hover { color: #C08A4E !important; }
+
+/* Phone button in header — always green circle */
+.header-btn > a[href^="tel"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #00A082 !important;
+  color: #fff !important;
+  transition: background-color 0.22s ease, opacity 0.22s ease;
+}
+.header-btn > a[href^="tel"] i { color: #fff !important; }
+.header-btn > a[href^="tel"]:hover { background-color: #008a6e !important; opacity: 0.9; }
+
+/* Fix template's btn-wrapper:hover that turns button text dark */
+.btn-wrapper:hover .theme-btn { color: #fff !important; }
+
+/* Logo: prevent template a:hover from changing text colors */
+.cs_site_branding,
+.cs_site_branding a {
+  text-decoration: none !important;
+  color: transparent !important;
+}
+.cs_site_branding a:hover,
+.cs_site_branding a:focus {
+  color: transparent !important;
+  text-decoration: none !important;
+}
+/* Keep logo child colors stable on hover */
+.cs_site_branding a:hover div,
+.cs_site_branding a:hover span {
+  color: inherit !important;
+}
+
+/* ── 15. MARQUEE ─────────────────────────────────────────────────── */
+.text-slider.text-style { color: var(--theme); }
+
+/* ── 16. SECTION TITLE AREA ─────────────────────────────────────── */
+.sub-title {
+  font-family: var(--body-font), 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--theme);
+}
+.title-area .title {
+  font-family: var(--title-font), 'Montserrat', 'Inter', sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: var(--title);
+  line-height: 1.22;
+}
+
+/* ── 17. FAQ ─────────────────────────────────────────────────────── */
+.accordion-item {
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius) !important;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.accordion-item.active .accordion-button {
+  background-color: var(--theme);
+  color: #fff;
+}
+.accordion-item .accordion-button {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--title);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 16px 20px;
+  background: none;
+  border: none;
+  transition: background 0.2s;
+}
+.accordion-item .accordion-body {
+  padding: 16px 20px;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ── 18. FOOTER ─────────────────────────────────────────────────── */
+.footer-section { background-color: var(--bg) !important; }
+.footer-section .footer-top {
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  padding-bottom: 32px;
+  margin-bottom: 48px;
+}
+.footer-section .widget-head h3 {
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-section .list-area li a {
+  color: rgba(255,255,255,0.65);
+  transition: color 0.2s;
+  font-size: 14px;
+}
+.footer-section .list-area li a:hover { color: var(--theme2); }
+.footer-section .social-icon a {
+  background-color: rgba(255,255,255,0.10);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: 8px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+.footer-section .social-icon a:hover { background-color: var(--theme); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.10); padding: 20px 0; }
+.footer-bottom p, .footer-bottom a { color: rgba(255,255,255,0.55); font-size: 13px; }
+
+/* ── 19. BREADCRUMB ─────────────────────────────────────────────── */
+.breadcumb-wrapper {
+  background-color: var(--bg) !important;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+}
+.breadcumb-title { color: #fff; font-size: clamp(1.8rem, 4vw, 2.8rem); }
+.breadcumb-menu li, .breadcumb-menu li a { color: rgba(255,255,255,0.65); font-size: 14px; }
+.breadcumb-menu li.active { color: var(--theme2); }
+
+/* ── 20. FORMS ──────────────────────────────────────────────────── */
+.contact-form input, .contact-form select, .contact-form textarea,
+.reservation-form input, .reservation-form select, .reservation-form textarea {
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  width: 100%;
+  font-size: 14px;
+  color: var(--title);
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 16px;
+}
+.contact-form input:focus, .contact-form textarea:focus,
+.reservation-form input:focus, .reservation-form textarea:focus {
+  border-color: var(--theme);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(111,78,55,0.12);
+}
+
+/* ── 21. GALLERY ────────────────────────────────────────────────── */
+.gallery-thumb.style2 { border-radius: var(--radius); overflow: hidden; }
+.gallery-thumb.style2 img { transition: transform 0.4s ease; width: 100%; height: 100%; object-fit: cover; }
+.gallery-thumb.style2:hover img { transform: scale(1.05); }
+
+/* ── 22. RATING BADGE ───────────────────────────────────────────── */
+.kk-rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--theme);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ── 23. SHAPE CLEANUP ──────────────────────────────────────────── */
+.banner-section .shape1_1, .banner-section .shape1_2, .banner-section .shape1_3,
+.banner-section .shape1_4, .banner-section .shape1_5, .banner-section .shape1_6,
+.cta-wrapper .shape1, .cta-wrapper .shape2, .cta-wrapper .shape3,
+.cta-wrapper .shape4, .cta-wrapper .shape5, .cta-wrapper .shape6, .cta-wrapper .shape7,
+.about-wrapper .shape1, .popular-dishes-wrapper .shape1, .popular-dishes-wrapper .shape2,
+.footer-section .shape1, .footer-section .shape2, .footer-section .shape3, .footer-section .shape4,
+.testimonial-section .vagetable-shape, .testimonial-section .chili-shape { display: none !important; }
+
+/* ── 24. MOBILE ─────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .cs_top_header { display: none; }
+  .kk-hero__title { font-size: 2rem; }
+  .kk-offer__card { min-height: 280px; }
+  .glovo-btn { font-size: 12px; padding: 10px 16px; }
+  .kk-split__content { padding: 32px 24px; }
+  .kk-delivery { padding: 70px 0; }
+}
+@media (max-width: 575px) {
+  .kk-hero__btns { flex-direction: column; align-items: flex-start; }
+  .kk-delivery__actions { flex-direction: column; }
+}

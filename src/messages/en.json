@@ -1,0 +1,156 @@
+{
+  "header": {
+    "open": "Open",
+    "follow": "Follow us:",
+    "orderGlovo": "Order on Glovo"
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "slide1Label": "Homemade Brunch · Every Day from 7:30 am",
+    "slide1Title": "A brunch\nworth waking\nup for.",
+    "slide1Btn1": "View Menu",
+    "slide1Btn2": "Order on Glovo",
+    "slide2Label": "Pizzas & Home-cooked Dishes",
+    "slide2Title": "Real food,\nmade from scratch,\nthe right way.",
+    "slide2Btn1": "View Menu",
+    "slide2Btn2": "Order on Glovo",
+    "slide3Label": "Specialty Coffee · 4.8★ 111 reviews",
+    "slide3Title": "The specialty\ncoffee Casa\nwas waiting for.",
+    "slide3Btn1": "Our Story",
+    "slide3Btn2": "Find Us"
+  },
+  "offer": {
+    "card1Tag": "From 7:30 am",
+    "card1Title": "Breakfast",
+    "card1Desc": "Fresh pastries, eggs your way & a hot drink",
+    "card2Tag": "All day long",
+    "card2Title": "Homemade Brunch",
+    "card2Desc": "Scandinavian, Norwegian, Spanish — pick yours",
+    "card3Tag": "Specialty Coffee",
+    "card3Title": "Coffees & Drinks",
+    "card3Desc": "Latte art, iced drinks, teas & homemade smoothies",
+    "btn": "View menu"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "The soul of a café, the comfort of a restaurant.",
+    "body": "Tucked into the Palmiers district of Casablanca, Koffee Kuento takes its coffee as seriously as its food. Our regulars keep coming back for the morning latte art, the weekend brunch, or just to settle in somewhere that feels worth staying.",
+    "ratingLabel": "Google reviews",
+    "box1Title": "Specialty coffee",
+    "box1Desc": "Hand-selected beans, precise extraction, latte art made in-house.",
+    "box2Title": "Homemade brunch",
+    "box2Desc": "Prepared fresh each morning from quality ingredients."
+  },
+  "aboutPage": {
+    "eyebrow": "Our story",
+    "title": "The soul of a café, the comfort of a restaurant.",
+    "p1": "Sitting at the corner of Rue Mortada and Rue de Bethléem, in the heart of the Palmiers neighbourhood in Casablanca, Koffee Kuento was built around one idea: a place where specialty coffee and honest home-cooked food share the same space, in a setting that makes you want to stay.",
+    "p2": "Exposed brick, raw wood, warm light — our industrial-chic space was designed to be your third place. Whether you're working, meeting friends, or just taking a proper lunch break, our team is here from 7:30 am with a well-pulled espresso and a brunch made fresh every morning.",
+    "p3a": "With",
+    "p3b": "our customers speak better than we can. Come see for yourself.",
+    "btn1": "View menu",
+    "btn2": "Get in touch"
+  },
+  "bestSelling": {
+    "eyebrow": "Our signatures",
+    "title": "What our customers keep ordering",
+    "tagSignature": "Signature",
+    "tagPopular": "Popular",
+    "orderBtn": "Order",
+    "viewAllBtn": "View full menu"
+  },
+  "ctaBanner2": {
+    "eyebrow": "Palmiers · Casablanca",
+    "heading": "More than coffee — a place to stay.",
+    "body": "Exposed brick, warm lights, good coffee. The kind of place where an hour turns into three without you noticing. Open daily from 7:30 am.",
+    "btn1": "Our story",
+    "btn2": "Get in touch"
+  },
+  "ctaBanner3": {
+    "eyebrow": "Glovo Delivery",
+    "heading": "We deliver to your door.",
+    "body": "Can't make it in? Find our full menu on Glovo — fast delivery to your area.",
+    "btn1": "Order on Glovo",
+    "btn2": "View menu"
+  },
+  "categories": {
+    "eyebrow": "Our categories",
+    "title": "Browse our menu",
+    "viewMore": "View more",
+    "pizzaDesc": "Wood-fired oven, generous toppings",
+    "burgerDesc": "Fresh meat & homemade buns",
+    "drinksDesc": "Specialty coffee & teas",
+    "saladsDesc": "Fresh & composed",
+    "brunchDesc": "Served all day long",
+    "pastaDesc": "Fresh & made in-house"
+  },
+  "testimonial": {
+    "eyebrow": "Customer reviews",
+    "titleSuffix": "Google reviews — what our customers say",
+    "readAll": "Read all Google reviews"
+  },
+  "gallery": {
+    "eyebrow": "Photo gallery",
+    "title": "Our space, our dishes",
+    "desc": "A glimpse of the space, the coffees and the plates — as they are at Koffee Kuento.",
+    "btn": "Get in touch"
+  },
+  "contact": {
+    "addrTitle": "Our address",
+    "addrBtn": "Get directions",
+    "emailTitle": "Email",
+    "emailBtn": "Write to us",
+    "phoneTitle": "Phone",
+    "phoneBtn": "Call us",
+    "hoursTitle": "Opening hours",
+    "hoursLabel": "Mon – Sun",
+    "glovo": "Order on Glovo",
+    "formTitle": "Write to us",
+    "namePh": "Your name",
+    "emailPh": "Your email",
+    "phonePh": "Phone number",
+    "subjectPh": "Subject",
+    "opt1": "Reservation",
+    "opt2": "Information",
+    "opt3": "Private event",
+    "opt4": "Other",
+    "messagePh": "Your message...",
+    "sendBtn": "Send"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About us",
+    "contact": "Contact us",
+    "gallery": "Photo gallery",
+    "menu": "Our menu"
+  },
+  "footer": {
+    "tagline": "Specialty coffee & homemade brunch in Palmiers, Casablanca. Open daily from 7:30 am.",
+    "addrLabel": "Address",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "quickLinks": "Quick links",
+    "ourMenu": "Our menu",
+    "hours": "Opening hours",
+    "hoursWd": "Mon – Fri",
+    "hoursWe": "Sat – Sun",
+    "glovo": "Order on Glovo",
+    "directions": "Get directions",
+    "copyright": "All rights reserved.",
+    "about": "About",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "coffees": "Coffees & Drinks",
+    "breakfast": "Breakfast",
+    "brunch": "Brunch",
+    "salads": "Salads & Mains",
+    "pastries": "Pastries"
+  }
+}

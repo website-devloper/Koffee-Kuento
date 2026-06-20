@@ -1,0 +1,156 @@
+{
+  "header": {
+    "open": "Ouvert",
+    "follow": "Suivez-nous :",
+    "orderGlovo": "Commander sur Glovo"
+  },
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "about": "À propos",
+    "gallery": "Galerie",
+    "contact": "Contact"
+  },
+  "hero": {
+    "slide1Label": "Brunch Maison · Tous les jours dès 07h30",
+    "slide1Title": "Le brunch\nqui tient\nses promesses.",
+    "slide1Btn1": "Voir le Menu",
+    "slide1Btn2": "Commander sur Glovo",
+    "slide2Label": "Pizzas & Plats Maison",
+    "slide2Title": "Une cuisine\nde chez nous,\ndes saveurs vraies.",
+    "slide2Btn1": "Voir le Menu",
+    "slide2Btn2": "Commander sur Glovo",
+    "slide3Label": "Café de Spécialité · 4.8★ 111 avis",
+    "slide3Title": "Le café\nde spécialité\nqu'il fallait.",
+    "slide3Btn1": "Notre Histoire",
+    "slide3Btn2": "Nous Trouver"
+  },
+  "offer": {
+    "card1Tag": "Dès 07h30",
+    "card1Title": "Petit-Déjeuner",
+    "card1Desc": "Viennoiseries fraîches, œufs & boisson chaude au choix",
+    "card2Tag": "Toute la journée",
+    "card2Title": "Brunch Maison",
+    "card2Desc": "Scandinave, Norvégien, Espagnol — choisissez le vôtre",
+    "card3Tag": "Specialty Coffee",
+    "card3Title": "Cafés & Boissons",
+    "card3Desc": "Latte art, boissons glacées, thés & smoothies maison",
+    "btn": "Voir le menu"
+  },
+  "about": {
+    "eyebrow": "À propos de nous",
+    "title": "L'âme d'un café, le confort d'un restaurant.",
+    "body": "Niché aux Palmiers à Casablanca, Koffee Kuento prend autant soin de son café que de ses plats. Nos habitués reviennent pour le latte art du matin, le brunch du week-end, ou juste pour s'installer dans un cadre qui donne envie de rester.",
+    "ratingLabel": "avis Google",
+    "box1Title": "Café de spécialité",
+    "box1Desc": "Grains sélectionnés, extraction maîtrisée, latte art maison.",
+    "box2Title": "Brunch maison",
+    "box2Desc": "Préparé chaque matin avec des produits frais."
+  },
+  "aboutPage": {
+    "eyebrow": "Notre histoire",
+    "title": "L'âme d'un café, le confort d'un restaurant.",
+    "p1": "Niché à l'intersection de la Rue Mortada et de la Rue de Bethléem, au cœur du quartier des Palmiers à Casablanca, Koffee Kuento est né d'une idée simple : un endroit où le café de spécialité rencontre une cuisine faite maison, dans un cadre qui invite à rester.",
+    "p2": "Briques apparentes, bois brut, lumières tamisées — notre espace industriel-chic a été pensé pour être votre tiers-lieu. Que vous veniez travailler, vous retrouver entre amis ou prendre le temps de déjeuner, l'équipe vous accueille dès 07h30 avec un espresso bien tiré et un brunch préparé avec des produits frais.",
+    "p3a": "Avec",
+    "p3b": "nos clients parlent mieux que nous. Venez vous faire votre propre avis.",
+    "btn1": "Voir le menu",
+    "btn2": "Nous contacter"
+  },
+  "bestSelling": {
+    "eyebrow": "Nos signatures",
+    "title": "Ce que nos clients commandent le plus",
+    "tagSignature": "Signature",
+    "tagPopular": "Populaire",
+    "orderBtn": "Commander",
+    "viewAllBtn": "Voir tout le menu"
+  },
+  "ctaBanner2": {
+    "eyebrow": "Palmiers · Casablanca",
+    "heading": "Plus qu'un café — un endroit où se poser.",
+    "body": "Briques apparentes, lumières tamisées, café qui fume. Le genre d'endroit où une heure se transforme en trois sans qu'on s'en rende compte. Ouvert 7j/7 dès 07h30.",
+    "btn1": "Notre histoire",
+    "btn2": "Nous contacter"
+  },
+  "ctaBanner3": {
+    "eyebrow": "Livraison Glovo",
+    "heading": "On livre aussi chez vous.",
+    "body": "Pas le temps de vous déplacer ? Retrouvez toute notre carte sur Glovo — livraison rapide dans votre secteur.",
+    "btn1": "Commander sur Glovo",
+    "btn2": "Voir le menu"
+  },
+  "categories": {
+    "eyebrow": "Nos catégories",
+    "title": "Explorez notre menu",
+    "viewMore": "Voir plus",
+    "pizzaDesc": "Four à bois, garnitures généreuses",
+    "burgerDesc": "Viande fraîche & pains maison",
+    "drinksDesc": "Café de spécialité & thés",
+    "saladsDesc": "Fraîches & composées",
+    "brunchDesc": "Servis toute la journée",
+    "pastaDesc": "Fraîches & faites maison"
+  },
+  "testimonial": {
+    "eyebrow": "Avis clients",
+    "titleSuffix": "avis Google — ce que nos clients disent",
+    "readAll": "Lire tous les avis Google"
+  },
+  "gallery": {
+    "eyebrow": "Galerie photo",
+    "title": "Notre espace, nos créations",
+    "desc": "Un aperçu du cadre, des cafés et des assiettes — tels qu'ils sont chez Koffee Kuento.",
+    "btn": "Nous contacter"
+  },
+  "contact": {
+    "addrTitle": "Notre adresse",
+    "addrBtn": "Itinéraire",
+    "emailTitle": "Email",
+    "emailBtn": "Écrire",
+    "phoneTitle": "Téléphone",
+    "phoneBtn": "Appeler",
+    "hoursTitle": "Horaires",
+    "hoursLabel": "Lun – Dim",
+    "glovo": "Commander sur Glovo",
+    "formTitle": "Écrivez-nous",
+    "namePh": "Votre nom",
+    "emailPh": "Votre email",
+    "phonePh": "Téléphone",
+    "subjectPh": "Sujet",
+    "opt1": "Réservation",
+    "opt2": "Informations",
+    "opt3": "Événement privé",
+    "opt4": "Autre",
+    "messagePh": "Votre message...",
+    "sendBtn": "Envoyer"
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "about": "À propos de nous",
+    "contact": "Contactez-nous",
+    "gallery": "Galerie photo",
+    "menu": "Notre menu"
+  },
+  "footer": {
+    "tagline": "Café de spécialité & brunch maison aux Palmiers, Casablanca. Ouvert 7j/7 dès 07h30.",
+    "addrLabel": "Adresse",
+    "emailLabel": "Email",
+    "phoneLabel": "Téléphone",
+    "quickLinks": "Liens rapides",
+    "ourMenu": "Notre menu",
+    "hours": "Horaires",
+    "hoursWd": "Lun – Ven",
+    "hoursWe": "Sam – Dim",
+    "glovo": "Commander sur Glovo",
+    "directions": "Itinéraire",
+    "copyright": "Tous droits réservés.",
+    "about": "À propos",
+    "menu": "Menu",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "coffees": "Cafés & Boissons",
+    "breakfast": "Petit-déjeuner",
+    "brunch": "Brunch",
+    "salads": "Salades & Plats",
+    "pastries": "Pâtisseries"
+  }
+}
