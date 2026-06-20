@@ -463,16 +463,12 @@ h1, h2, h3, h4, h5, h6 {
 .kk-delivery__badge {
   display: inline-flex;
   align-items: center;
-  background: rgba(192,138,78,0.18);
-  border: 1px solid rgba(192,138,78,0.5);
   color: #C08A4E;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 7px 18px;
-  border-radius: 40px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 .kk-delivery__heading {
   font-family: var(--title-font), 'Montserrat', sans-serif;
