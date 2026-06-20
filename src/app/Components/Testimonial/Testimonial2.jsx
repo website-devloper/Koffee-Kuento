@@ -84,13 +84,9 @@ const Testimonial2 = () => {
                 <div className="testimonial-wrap style2">
                     <div className="row gx-80 gy-5">
                         <div className="col-xl-7 order-2 order-xl-1">
-                            <div className="title-area">
-                                <div className="sub-title text-start wow fadeInUp" data-wow-delay="0.5s">
-                                    <Image className="me-1" src="/assets/img/icon/titleIcon.svg" alt="" width={20} height={20} />
-                                    {t('testimonial.eyebrow').toUpperCase()}
-                                    <Image className="ms-1" src="/assets/img/icon/titleIcon.svg" alt="" width={20} height={20} />
-                                </div>
-                                <h2 className="title text-start wow fadeInUp" data-wow-delay="0.7s">
+                            <div className="kk-section-head mb-4">
+                                <span className="kk-eyebrow">{t('testimonial.eyebrow')}</span>
+                                <h2 className="kk-section-title mt-2 text-start">
                                     {SITE.rating.value}★ · {SITE.rating.count} {t('testimonial.titleSuffix')}
                                 </h2>
                             </div>

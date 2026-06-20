@@ -1,5 +1,4 @@
 "use client"
-import Image from 'next/image';
 import { SITE } from '@/config/site';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -18,37 +17,28 @@ const About2 = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="title-area">
-                                <div className="sub-title text-start wow fadeInUp" data-wow-delay="0.5s">
-                                    <Image className="me-1" src="/assets/img/icon/titleIcon.svg" alt="" width={20} height={20} />
-                                    {t('about.eyebrow')}
-                                    <Image className="ms-1" src="/assets/img/icon/titleIcon.svg" alt="" width={20} height={20} />
-                                </div>
-                                <h2 className="title text-start wow fadeInUp" data-wow-delay="0.7s">
-                                    {t('about.title')}
-                                </h2>
-                                <div className="text text-start wow fadeInUp" data-wow-delay="0.8s">
-                                    {t('about.body')}{' '}
-                                    <strong>{SITE.rating.value}★ ({SITE.rating.count} {t('about.ratingLabel')})</strong>.
-                                </div>
+                            <div className="mb-4">
+                                <span className="kk-eyebrow">{t('about.eyebrow')}</span>
+                                <h2 className="kk-section-title mt-2 text-start">{t('about.title')}</h2>
+                                <p className="kk-about-body">{t('about.body')}{' '}<strong>{SITE.rating.value}★ ({SITE.rating.count} {t('about.ratingLabel')})</strong>.</p>
                             </div>
-                            <div className="fancy-box-wrapper">
-                                <div className="fancy-box">
-                                    <div className="item">
-                                        <Image src="/assets/img/icon/aboutIcon1_1.svg" alt="" width={36} height={36} />
+                            <div className="kk-about-features">
+                                <div className="kk-about-feat">
+                                    <div className="kk-about-feat__icon">
+                                        <i className="bi bi-cup-hot-fill"></i>
                                     </div>
-                                    <div className="item">
-                                        <h6>{t('about.box1Title')}</h6>
-                                        <p>{t('about.box1Desc')}</p>
+                                    <div>
+                                        <h6 className="kk-about-feat__title">{t('about.box1Title')}</h6>
+                                        <p className="kk-about-feat__desc">{t('about.box1Desc')}</p>
                                     </div>
                                 </div>
-                                <div className="fancy-box">
-                                    <div className="item">
-                                        <Image src="/assets/img/icon/aboutIcon1_2.svg" alt="" width={36} height={36} />
+                                <div className="kk-about-feat">
+                                    <div className="kk-about-feat__icon">
+                                        <i className="bi bi-basket2-fill"></i>
                                     </div>
-                                    <div className="item">
-                                        <h6>{t('about.box2Title')}</h6>
-                                        <p>{t('about.box2Desc')}</p>
+                                    <div>
+                                        <h6 className="kk-about-feat__title">{t('about.box2Title')}</h6>
+                                        <p className="kk-about-feat__desc">{t('about.box2Desc')}</p>
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
 import { useLanguage } from '@/context/LanguageContext';
@@ -36,13 +35,9 @@ const FeatureCategory1 = () => {
     <section className="popular-dishes-section fix section-padding">
       <div className="popular-dishes-wrapper style3">
         <div className="container1">
-          <div className="title-area">
-            <div className="sub-title text-center wow fadeInUp" data-wow-delay="0.5s">
-              <Image className="me-1" src="/assets/img/icon/titleIcon.svg" alt="" width={20} height={20} />
-              {t('categories.eyebrow').toUpperCase()}
-              <Image className="ms-1" src="/assets/img/icon/titleIcon.svg" alt="" width={20} height={20} />
-            </div>
-            <h2 className="title wow fadeInUp" data-wow-delay="0.7s">{t('categories.title')}</h2>
+          <div className="kk-section-head text-center mb-50">
+            <span className="kk-eyebrow">{t('categories.eyebrow')}</span>
+            <h2 className="kk-section-title mt-2">{t('categories.title')}</h2>
           </div>
 
           <div className="slider-area">
@@ -77,7 +72,7 @@ const FeatureCategory1 = () => {
           <ul className="marqee-list d-flex">
             <li className="marquee-item style1">
               {[...marqueeItems, ...marqueeItems].map((text, i) => (
-                <span key={i} className="text-slider text-style">{text}</span>
+                <span key={i} className="text-slider text-style kk-marquee-item">{text}</span>
               ))}
             </li>
           </ul>
