@@ -503,19 +503,19 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.85);
+  font-weight: 700;
+  color: #fff;
   text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.35);
+  border: 2px solid #fff;
   padding: 13px 28px;
   border-radius: 6px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   transition: all 0.25s ease;
-  letter-spacing: 0.04em;
 }
 .kk-delivery__menu-btn:hover {
-  color: #fff;
-  border-color: #fff;
-  background: rgba(255,255,255,0.08);
+  background: #fff;
+  color: #2B211A;
 }
 @media (max-width: 767px) {
   .kk-delivery { padding: 80px 0; }
