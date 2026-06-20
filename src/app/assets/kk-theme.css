@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
 }
 .dishes-card.style3 .dishes-content {
-  padding: 12px 4px 0;
+  padding: 16px 4px 0;
   text-align: center;
 }
 .dishes-card.style3 .dishes-content h3 {
@@ -594,7 +594,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   font-weight: 700;
   color: #2B211A;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .dishes-card.style3 .dishes-content h3 a {
   color: #2B211A;
